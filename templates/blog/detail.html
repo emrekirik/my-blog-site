@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block detail %}
+{% load static %}
+<section class="home2">
+</section>
+    <br><br><br><br>
+    <div class="container p-3 my-3 border"><br><br><br>
+        <h2 class="myH2">{{post.title}}</h2><br>
+        <p class="myP">{{post.content}}</p>
+        <p class="date">{{post.pub_date}}</p>
+        <p class="myP">{{post.tag}}</p>
+        <img src="{{ post.cover_image.url }} " class="w-100" alt="Cinque Terre"  ><br><br>
+    </div>
+{% endblock detail %}

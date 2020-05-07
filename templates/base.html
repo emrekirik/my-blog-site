@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+<head>
+    {% include "blog/header.html" %}
+</head>
+<body translate="no">
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/">Blog</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                <li><a href="#">Hakkımda</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    
+    <div style="height: 1000px">
+        {% block detail %}
+        {% block home %}
+        {% endblock home %}
+        {% endblock detail %}
+    </div>
+    {% include "blog/footer.html" %}
+</body>
+</html>
