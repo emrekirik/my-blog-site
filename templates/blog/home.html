@@ -11,7 +11,7 @@
             </a><br><br>
             <h6 class="date">{{post.pub_date}}</h6><br><br><br>
             <h2 class="myH2">{{post.title}}</h2><br>
-            <p class="myP">{{post.content|truncatechars:300}}</p><br>
+            <div class="myP">{{post.content|truncatechars:300|linebreaks}}</div><br>
             <a href="{{post.get_absolute_url }}">
                 <h6 class="myH6">Daha Fazlasını Oku</h6 >
             </a>
